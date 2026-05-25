@@ -42,6 +42,129 @@
         }
 
         .icon-container {
+            margin: 0 auto 1rem auto;
+            display: block;
+            width: 80px;
+            height: 80px;
+        }
+
+        /* Branding Typography & Sakura Title Integration */
+        .brand-heading {
+            display: inline-flex;
+            justify-content: center;
+            align-items: baseline;
+            font-family: var(--font-logo);
+            font-size: 4.5rem;
+            font-weight: 400;
+            margin-bottom: 0.2rem;
+            color: var(--text-main);
+            position: relative;
+        }
+
+        .brand-heading .first-letter {
+            margin-right: -0.15rem; /* Tightens kerning for script flow */
+        }
+
+        .brand-heading .custom-i-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Absolute positioning coordinates to float the sakura over the dotless i */
+        .sakura-dot {
+            position: absolute;
+            top: 1.15rem;
+            left: 50%;
+            transform: translateX(-40%) rotate(-15deg);
+            width: 18px;
+            height: 18px;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            color: #666;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 0.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .status-box {
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 2rem 0;
+            margin-bottom: 3rem;
+        }
+
+        .status-box p {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            color: #4a4a4a;
+        }
+
+        .contact-link {
+            display: inline-block;
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding-bottom: 4px;
+            border-bottom: 2px solid var(--accent-pink);
+            transition: color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .contact-link:hover {
+            color: var(--accent-pink);
+            border-bottom-color: var(--text-main);
+        }
+
+        footer {
+            margin-top: 5rem<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiraBulous | Handmade Crafts & Design</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-main: #2B2B2B;
+            --accent-pink: #F06292;
+            --font-logo: 'Marck Script', cursive;
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: var(--font-sans);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .wrapper {
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .icon-container {
             margin: 0 auto 1.5rem auto;
             display: block;
             width: 80px;
